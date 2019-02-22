@@ -1,5 +1,7 @@
 ﻿using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
+using MVC_WebAPI_Example.WebAPI.Infrastructure;
 
 namespace MVC_WebAPI_Example.WebAPI
 {
@@ -18,9 +20,11 @@ namespace MVC_WebAPI_Example.WebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            // returrn Json instead XML;
+            // return Json instead XML;
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
+
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
         }
     }
 }

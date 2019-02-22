@@ -1,14 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using MVC_WebAPI_Example.BLL.Common.Interfaces;
 
 namespace MVC_WebAPI_Example.WebAPI.Api.v1
 {
     public class HomeController : ApiController
     {
+        private readonly ITestService service;
+
+        public HomeController(ITestService service)
+        {
+            this.service = service;
+        }
+
         // GET: api//v1/Home
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            var result = service.Method1();
+
+            return result;
         }
 
         // GET: api//v1/Home/5

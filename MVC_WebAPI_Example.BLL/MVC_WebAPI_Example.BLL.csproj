@@ -42,6 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TestService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC_WebAPI_Example.BLL.Common\MVC_WebAPI_Example.BLL.Common.csproj">
+      <Project>{967EC2C7-9153-4FB7-96E6-48DC53ED56EF}</Project>
+      <Name>MVC_WebAPI_Example.BLL.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

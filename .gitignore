@@ -4,3 +4,5 @@ obj/
 packages/
 Web.Debug.config
 Web.Release.config
+Content/
+Scripts/

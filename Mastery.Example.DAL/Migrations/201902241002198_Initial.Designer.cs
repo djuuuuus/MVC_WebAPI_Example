@@ -4,7 +4,7 @@ using System.CodeDom.Compiler;
 using System.Data.Entity.Migrations.Infrastructure;
 using System.Resources;
 
-namespace Mystery.Example.DAL.Migrations
+namespace Mastery.Example.DAL.Migrations
 {
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
     public sealed partial class Initial : IMigrationMetadata

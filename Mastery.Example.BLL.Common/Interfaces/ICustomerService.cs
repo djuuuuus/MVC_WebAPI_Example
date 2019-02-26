@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Mystery.Example.BLL.Common.Models.Customer;
+using Mastery.Example.BLL.Common.Models.Customer;
 
-namespace Mystery.Example.BLL.Common.Interfaces
+namespace Mastery.Example.BLL.Common.Interfaces
 {
     public interface ICustomerService : IDisposable
     {

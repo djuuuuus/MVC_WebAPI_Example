@@ -2,7 +2,7 @@
 using Mystery.Example.DAL.Common.Models.Customer;
 using Mystery.Example.DAL.Common.Models.Product;
 
-namespace Mystery.Example.DAL
+namespace Mastery.Example.DAL
 {
     public class ShopDbContext : System.Data.Entity.DbContext
     {

@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Linq;
 using Mystery.Example.DAL.Common.Interfaces;
 
-namespace Mystery.Example.DAL.Repositories
+namespace Mastery.Example.DAL.Repositories
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class, new()
     {

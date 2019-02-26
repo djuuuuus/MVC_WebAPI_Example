@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Web.Http.ExceptionHandling;
 using System.Web.Http.Results;
 
-namespace Mastery.Example.WebAPI.Infrastructure
+namespace Mystery.Example.WebAPI.Infrastructure
 {
     public class GlobalExceptionHandler : IExceptionHandler
     {

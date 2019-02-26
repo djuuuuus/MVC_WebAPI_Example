@@ -1,7 +1,7 @@
 ﻿using Mystery.Example.DAL.Common.Interfaces;
 using Ninject.Modules;
 
-namespace Mystery.Example.DAL
+namespace Mastery.Example.DAL
 {
     public class NinjectModules : NinjectModule
     {

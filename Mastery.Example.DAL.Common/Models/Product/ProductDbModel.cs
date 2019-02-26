@@ -1,7 +1,7 @@
-﻿using Mastery.Example.DAL.Common.Models.Customer;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Mastery.Example.DAL.Common.Models.Customer;
 
 namespace Mastery.Example.DAL.Common.Models.Product
 {

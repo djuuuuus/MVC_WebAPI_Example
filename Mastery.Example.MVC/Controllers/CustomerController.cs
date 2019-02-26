@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
-using Mystery.Example.BLL.Common.Interfaces;
-using Mystery.Example.BLL.Common.Models.Customer;
+using Mastery.Example.BLL.Common.Interfaces;
+using Mastery.Example.BLL.Common.Models.Customer;
 
 namespace Mastery.Example.MVC.Controllers
 {

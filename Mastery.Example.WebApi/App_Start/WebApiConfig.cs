@@ -1,9 +1,9 @@
 ﻿using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.ExceptionHandling;
-using Mastery.Example.WebAPI.Infrastructure;
+using Mystery.Example.WebAPI.Infrastructure;
 
-namespace Mastery.Example
+namespace Mystery.Example.WebAPI
 {
     public static class WebApiConfig
     {

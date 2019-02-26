@@ -1,7 +1,7 @@
-﻿using Mastery.Example.DAL.Common.Models.Customer;
-using Mystery.Example.BLL.Common.Models.Customer;
+﻿using Mastery.Example.BLL.Common.Models.Customer;
+using Mastery.Example.DAL.Common.Models.Customer;
 
-namespace Mystery.Example.BLL.Converter.Customer
+namespace Mastery.Example.BLL.Converter.Customer
 {
     public class ConvertCustomerView
     {

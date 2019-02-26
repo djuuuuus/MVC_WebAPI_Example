@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mystery.Example.BLL.Services.BaseService
+namespace Mastery.Example.BLL.Services.BaseService
 {
     public class BaseService : IDisposable
     {

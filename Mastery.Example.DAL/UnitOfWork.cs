@@ -1,7 +1,7 @@
-﻿using Mystery.Example.DAL.Common.Interfaces;
-using Mystery.Example.DAL.Repositories;
+﻿using Mastery.Example.DAL.Repositories;
+using Mystery.Example.DAL.Common.Interfaces;
 
-namespace Mystery.Example.DAL
+namespace Mastery.Example.DAL
 {
     public class UnitOfWork : IUnitOfWork
     {

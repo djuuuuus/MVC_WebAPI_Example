@@ -7,7 +7,7 @@
     <ProjectGuid>{8815B6CB-CED7-474D-881A-C1143C5EC7AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mystery.Example.BLL</RootNamespace>
+    <RootNamespace>Mastery.Example.BLL</RootNamespace>
     <AssemblyName>Mastery.Example.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

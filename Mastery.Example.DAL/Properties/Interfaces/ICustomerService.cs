@@ -1,4 +1,4 @@
-﻿namespace Mystery.Example.DAL.Properties.Interfaces
+﻿namespace Mastery.Example.DAL.Properties.Interfaces
 {
     //public interface ICustomerService
     //{

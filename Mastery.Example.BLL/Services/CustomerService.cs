@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Mastery.Example.BLL.Common.Interfaces;
+using Mastery.Example.BLL.Common.Models.Customer;
+using Mastery.Example.BLL.Converter.Customer;
 using Mastery.Example.DAL.Common.Interfaces;
 using Mastery.Example.DAL.Common.Models.Customer;
-using Mystery.Example.BLL.Common.Interfaces;
-using Mystery.Example.BLL.Common.Models.Customer;
-using Mystery.Example.BLL.Converter.Customer;
 
-namespace Mystery.Example.BLL.Services
+namespace Mastery.Example.BLL.Services
 {
     public class CustomerService : BaseService.BaseService, ICustomerService
     {

@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
-using Mystery.Example.BLL.Common.Interfaces;
-using Mystery.Example.BLL.Common.Models.Customer;
+using Mastery.Example.BLL.Common.Interfaces;
+using Mastery.Example.BLL.Common.Models.Customer;
 
-namespace Mastery.Example.Api.v1
+namespace Mystery.Example.WebAPI.Api.v1
 {
     public class CustomerController : ApiController
     {

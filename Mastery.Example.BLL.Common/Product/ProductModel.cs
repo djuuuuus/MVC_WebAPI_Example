@@ -1,4 +1,4 @@
-﻿namespace Mystery.Example.BLL.Common.Product
+﻿namespace Mastery.Example.BLL.Common.Product
 {
     public class ProductModel
     {

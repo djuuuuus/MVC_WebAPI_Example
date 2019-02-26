@@ -1,8 +1,8 @@
-﻿using Mystery.Example.BLL.Common.Interfaces;
-using Mystery.Example.BLL.Services;
+﻿using Mastery.Example.BLL.Common.Interfaces;
+using Mastery.Example.BLL.Services;
 using Ninject.Modules;
 
-namespace Mystery.Example.BLL
+namespace Mastery.Example.BLL
 {
     public class NinjectRegistrations : NinjectModule
     {

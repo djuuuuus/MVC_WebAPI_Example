@@ -7,7 +7,7 @@
     <ProjectGuid>{1DC38307-8EEA-48B3-A885-623F29B93B7C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mystery.Example.Common</RootNamespace>
+    <RootNamespace>Mastery.Example.Common</RootNamespace>
     <AssemblyName>Mastery.Example.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -7,7 +7,7 @@
     <ProjectGuid>{AC91A757-272D-4DF5-B5F3-F42A94D414AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mystery.Example.DAL.Common</RootNamespace>
+    <RootNamespace>Mastery.Example.DAL.Common</RootNamespace>
     <AssemblyName>Mastery.Example.DAL.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

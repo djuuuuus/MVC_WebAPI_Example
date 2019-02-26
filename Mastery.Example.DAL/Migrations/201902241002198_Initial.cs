@@ -1,6 +1,6 @@
 using System.Data.Entity.Migrations;
 
-namespace Mystery.Example.DAL.Migrations
+namespace Mastery.Example.DAL.Migrations
 {
     public partial class Initial : DbMigration
     {

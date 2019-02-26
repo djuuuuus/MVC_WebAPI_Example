@@ -1,4 +1,4 @@
-﻿namespace Mystery.Example.BLL.Common.Models.Customer
+﻿namespace Mastery.Example.BLL.Common.Models.Customer
 {
     public class CustomerModel
     {

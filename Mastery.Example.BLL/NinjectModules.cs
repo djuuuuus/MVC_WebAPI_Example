@@ -4,7 +4,7 @@ using Ninject.Modules;
 
 namespace Mastery.Example.BLL
 {
-    public class NinjectRegistrations : NinjectModule
+    public class NinjectModules : NinjectModule
     {
         public override void Load()
         {

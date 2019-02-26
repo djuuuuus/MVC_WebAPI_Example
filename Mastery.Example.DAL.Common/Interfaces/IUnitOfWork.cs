@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Mastery.Example.DAL.Common.Interfaces
+﻿namespace Mastery.Example.DAL.Common.Interfaces
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork
     {
         IGenericRepository<TModel> GetGenericRepository<TModel>()
             where TModel : class, new();

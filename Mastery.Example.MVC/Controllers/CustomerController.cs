@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
-using Mastery.Example.BLL.Common.Interfaces;
+﻿using Mastery.Example.BLL.Common.Interfaces;
 using Mastery.Example.BLL.Common.Models.Customer;
+using System.Web.Mvc;
 
 namespace Mastery.Example.MVC.Controllers
 {
@@ -8,23 +8,17 @@ namespace Mastery.Example.MVC.Controllers
     {
         private readonly ICustomerService service;
 
-        public CustomerController(ICustomerService service) => this.service = service;
+        public CustomerController(ICustomerService service) 
+            => this.service = service;
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                service?.Dispose();
-            }
+        public ActionResult AllCustomers() 
+            => View(service.GetCustomers());
 
-            base.Dispose(disposing);
-        }
-
-        public ActionResult AllCustomers() => View(service.GetCustomers());
-
-        public ActionResult CreateCustomer() => View();
+        public ActionResult CreateCustomer() 
+            => View();
 
         [HttpPost]
-        public ActionResult CreateCustomer(CustomerRequestModel customer) => View(service.CreateCustomers(customer));
+        public ActionResult CreateCustomer(CustomerRequestModel customer) 
+            => View(service.CreateCustomers(customer));
     }
 }

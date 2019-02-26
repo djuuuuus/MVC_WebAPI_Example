@@ -8,7 +8,7 @@ using Mastery.Example.DAL.Common.Models.Customer;
 
 namespace Mastery.Example.BLL.Services
 {
-    public class CustomerService : BaseService.BaseService, ICustomerService
+    public class CustomerService : BaseService, ICustomerService
     {
         private readonly IUnitOfWork unitOfWork;
 
@@ -20,28 +20,20 @@ namespace Mastery.Example.BLL.Services
             customerGenericRepository = unitOfWork.GetGenericRepository<CustomerDbModel>();
         }
 
-        protected override void Dispose(bool disposing)
+        public IEnumerable<CustomerViewModel> GetCustomers() =>
+            customerGenericRepository
+                .GetQueryAsNoTracking()
+                .AsEnumerable()
+                .Select(ConvertDbModel.ToViewModel);
+
+        public CustomerViewModel CreateCustomers(CustomerRequestModel customer)
         {
-            if (disposing)
-            {
-                unitOfWork?.Dispose();
-            }
-
-            base.Dispose(disposing);
-        }
-
-        public IEnumerable<CustomerModel> GetCustomers() =>
-            customerGenericRepository.GetQueryAsNoTracking().AsEnumerable().Select(ConvertCustomerDbModel.ToModel);
-
-      
-        public CustomerModel CreateCustomers(CustomerRequestModel customer)
-        {
-            var customerDbModel = ConvertCustomerView.ToDbModel(customer);
+            var customerDbModel = ConvertViewModel.ToDbModel(customer);
 
             customerGenericRepository.Add(customerDbModel);
             unitOfWork.SaveChanges();
 
-            return ConvertCustomerDbModel.ToModel(customerDbModel);
+            return ConvertDbModel.ToViewModel(customerDbModel);
         }
     }
 }

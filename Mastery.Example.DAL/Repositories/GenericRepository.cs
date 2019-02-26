@@ -16,20 +16,6 @@ namespace Mastery.Example.DAL.Repositories
             dbSet = this.context.Set<TEntity>();
         }
 
-        ~GenericRepository() => ReleaseUnmanagedResources();
-
-        private void ReleaseUnmanagedResources()
-        {
-            context?.Dispose();
-            context = null;
-        }
-
-        public void Dispose()
-        {
-            ReleaseUnmanagedResources();
-            GC.SuppressFinalize(this);
-        }
-
         #region CRUD
 
         public IQueryable<TEntity> GetQuery() => dbSet;

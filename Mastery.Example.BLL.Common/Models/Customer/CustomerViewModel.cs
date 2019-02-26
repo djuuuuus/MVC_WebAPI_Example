@@ -1,6 +1,6 @@
 ﻿namespace Mastery.Example.BLL.Common.Models.Customer
 {
-    public class CustomerModel
+    public class CustomerViewModel
     {
         public int Id { get; set; }
 

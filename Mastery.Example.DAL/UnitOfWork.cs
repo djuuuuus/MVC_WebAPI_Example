@@ -7,13 +7,13 @@ namespace Mastery.Example.DAL
     {
         private readonly ShopDbContext context;
 
-        public UnitOfWork(ShopDbContext context) => this.context = context;
-
-        public void Dispose() => context?.Dispose();
+        public UnitOfWork(ShopDbContext context) 
+            => this.context = context;
 
         public IGenericRepository<TModel> GetGenericRepository<TModel>() where TModel : class, new() 
             => new GenericRepository<TModel>(context);
 
-        public int SaveChanges() => context.SaveChanges();
+        public int SaveChanges()
+            => context.SaveChanges();
     }
 }

@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Mastery.Example.BLL.Common.Models.Customer;
 using System.Collections.Generic;
-using Mastery.Example.BLL.Common.Models.Customer;
 
 namespace Mastery.Example.BLL.Common.Interfaces
 {
-    public interface ICustomerService : IDisposable
+    public interface ICustomerService
     {
-        IEnumerable<CustomerModel> GetCustomers();
+        IEnumerable<CustomerViewModel> GetCustomers();
 
-        CustomerModel CreateCustomers(CustomerRequestModel customer);
+        CustomerViewModel CreateCustomers(CustomerRequestModel customer);
     }
 }

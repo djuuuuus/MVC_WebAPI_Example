@@ -4,6 +4,7 @@ namespace Mastery.Example.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index() => View();
+        public ActionResult Index() 
+            => View();
     }
 }

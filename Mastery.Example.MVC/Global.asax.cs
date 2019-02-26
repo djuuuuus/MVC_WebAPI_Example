@@ -17,13 +17,15 @@ namespace Mastery.Example.MVC
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
-        private void RegisterNinjectMvc() => DependencyResolver.SetResolver(new NinjectResolverMvc(CreateKernel())); //https://gist.github.com/odytrice/582108
+        private void RegisterNinjectMvc() 
+            => DependencyResolver.SetResolver(new NinjectResolverMvc(CreateKernel())); //https://gist.github.com/odytrice/582108
 
         private IKernel CreateKernel()
         {
             var kernel = new StandardKernel();
 
-            kernel.Load(new[] { "Mastery.Example.*.dll" }); //https://github.com/ninject/Ninject/wiki/Modules-and-the-Kernel -> Dynamic Module Loading need for Onion Architecture;
+            //https://github.com/ninject/Ninject/wiki/Modules-and-the-Kernel -> Dynamic Module Loading need for Onion Architecture;
+            kernel.Load(new[] { "Mastery.Example.*.dll" }); 
         
             return kernel;
         }

@@ -9,10 +9,13 @@ namespace Mastery.Example.MVC
     {
         private IKernel Kernel { get; }
 
-        public NinjectResolverMvc(IKernel kernel) => Kernel = kernel;
+        public NinjectResolverMvc(IKernel kernel) 
+            => Kernel = kernel;
 
-        public object GetService(Type serviceType) => Kernel.TryGet(serviceType);
+        public object GetService(Type serviceType) 
+            => Kernel.TryGet(serviceType);
 
-        public IEnumerable<object> GetServices(Type serviceType) => Kernel.GetAll(serviceType);
+        public IEnumerable<object> GetServices(Type serviceType) 
+            => Kernel.GetAll(serviceType);
     }
 }

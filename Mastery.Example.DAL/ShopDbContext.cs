@@ -4,7 +4,7 @@ using Mastery.Example.DAL.Common.Models.Product;
 
 namespace Mastery.Example.DAL
 {
-    public class ShopDbContext : System.Data.Entity.DbContext
+    public class ShopDbContext : DbContext
     {
         public ShopDbContext() : base("ShopStore") { }
 

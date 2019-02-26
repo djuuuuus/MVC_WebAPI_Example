@@ -7,7 +7,8 @@ namespace Mastery.Example.DAL.Common.Models.Product
 {
     public class ProductDbModel
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)] public int ProductId { get; set; }
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ProductId { get; set; }
 
         public string ProductName { get; set; }
 

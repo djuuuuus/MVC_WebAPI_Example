@@ -8,20 +8,14 @@ namespace Mystery.Example.WebAPI.Api.v1
     {
         private readonly ICustomerService service;
 
-        public CustomerController(ICustomerService service) => this.service = service;
+        public CustomerController(ICustomerService service) 
+            => this.service = service;
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                service?.Dispose();
-            }
+        public IHttpActionResult GetCustomers() 
+            => Ok(service.GetCustomers());
 
-            base.Dispose(disposing);
-        }
-
-        public IHttpActionResult GetCustomers() => Ok(service.GetCustomers());
-
-        [HttpPost] public IHttpActionResult CreateCustomers([FromBody]CustomerRequestModel customer) => Ok(service.CreateCustomers(customer));
+        [HttpPost]
+        public IHttpActionResult CreateCustomers([FromBody]CustomerRequestModel customer) 
+            => Ok(service.CreateCustomers(customer));
     }
 }

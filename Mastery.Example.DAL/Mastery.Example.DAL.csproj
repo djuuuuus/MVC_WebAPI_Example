@@ -76,5 +76,11 @@
       <DependentUpon>201902241002198_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mastery.Example.DAL.Common\Mastery.Example.DAL.Common.csproj">
+      <Project>{AC91A757-272D-4DF5-B5F3-F42A94D414AF}</Project>
+      <Name>Mastery.Example.DAL.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

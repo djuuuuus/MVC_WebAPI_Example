@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
-using Mystery.Example.DAL.Common.Models.Customer;
-using Mystery.Example.DAL.Common.Models.Product;
+using Mastery.Example.DAL.Common.Models.Customer;
+using Mastery.Example.DAL.Common.Models.Product;
 
 namespace Mastery.Example.DAL
 {

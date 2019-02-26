@@ -1,4 +1,4 @@
-﻿using Mystery.Example.DAL.Common.Interfaces;
+﻿using Mastery.Example.DAL.Common.Interfaces;
 using Ninject.Modules;
 
 namespace Mastery.Example.DAL

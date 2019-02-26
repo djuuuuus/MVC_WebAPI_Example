@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Linq;
-using Mystery.Example.DAL.Common.Interfaces;
+using Mastery.Example.DAL.Common.Interfaces;
 
 namespace Mastery.Example.DAL.Repositories
 {

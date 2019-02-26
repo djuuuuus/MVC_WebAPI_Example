@@ -1,5 +1,5 @@
-﻿using Mastery.Example.DAL.Repositories;
-using Mystery.Example.DAL.Common.Interfaces;
+﻿using Mastery.Example.DAL.Common.Interfaces;
+using Mastery.Example.DAL.Repositories;
 
 namespace Mastery.Example.DAL
 {

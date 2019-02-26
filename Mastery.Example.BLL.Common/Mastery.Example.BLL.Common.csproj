@@ -47,11 +47,5 @@
     <Compile Include="Product\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mastery.Example.DAL.Common\Mastery.Example.DAL.Common.csproj">
-      <Project>{ac91a757-272d-4df5-b5f3-f42a94d414af}</Project>
-      <Name>Mastery.Example.DAL.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

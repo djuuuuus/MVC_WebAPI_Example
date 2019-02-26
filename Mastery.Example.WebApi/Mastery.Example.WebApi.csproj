@@ -140,6 +140,10 @@
       <Project>{8815B6CB-CED7-474D-881A-C1143C5EC7AE}</Project>
       <Name>Mastery.Example.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Mastery.Example.Common\Mastery.Example.Common.csproj">
+      <Project>{1dc38307-8eea-48b3-a885-623f29b93b7c}</Project>
+      <Name>Mastery.Example.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Mastery.Example.DAL\Mastery.Example.DAL.csproj">
       <Project>{0f3c3f38-0c7e-44f8-a087-e4ff77bc5f5f}</Project>
       <Name>Mastery.Example.DAL</Name>

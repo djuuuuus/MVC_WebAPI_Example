@@ -28,7 +28,7 @@ namespace Mastery.Example.BLL.Services
 
         public CustomerViewModel CreateCustomers(CustomerRequestModel customer)
         {
-            var customerDbModel = ConvertViewModel.ToDbModel(customer);
+            var customerDbModel = ConvertRequestModel.ToDbModel(customer);
 
             customerGenericRepository.Add(customerDbModel);
             unitOfWork.SaveChanges();

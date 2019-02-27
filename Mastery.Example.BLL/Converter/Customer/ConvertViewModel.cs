@@ -3,7 +3,7 @@ using Mastery.Example.DAL.Common.Models.Customer;
 
 namespace Mastery.Example.BLL.Converter.Customer
 {
-    public class ConvertViewModel
+    public class ConvertRequestModel
     {
         public static CustomerDbModel ToDbModel(CustomerRequestModel model)
             => new CustomerDbModel

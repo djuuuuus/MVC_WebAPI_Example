@@ -2,7 +2,7 @@
 using Mastery.Example.BLL.Common.Interfaces;
 using Mastery.Example.BLL.Common.Models.Customer;
 
-namespace Mystery.Example.WebAPI.Api.v1
+namespace Mastery.Example.WebAPI.Api.v1
 {
     public class CustomerController : ApiController
     {

@@ -1,6 +1,4 @@
-﻿using System.Web.Http;
-
-namespace Mystery.Example.WebAPI
+﻿namespace Mastery.Example.WebAPI
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

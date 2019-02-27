@@ -1,11 +1,8 @@
 ﻿using System.Net;
-using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http.ExceptionHandling;
-using System.Web.Http.Results;
 
-namespace Mystery.Example.WebAPI.Infrastructure
+namespace Mastery.Example.WebAPI.Infrastructure
 {
     public class GlobalExceptionHandler : IExceptionHandler
     {
